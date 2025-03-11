@@ -101,7 +101,7 @@ class DataService {
                 ]
             }
         ]
-
+        data.sort((student, otherStudent) => student.name.localeCompare(otherStudent.name))
         return data;
     }
 }
